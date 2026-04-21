@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-from ingestion import get_data
+from ingestion import get_data, generate_sample_data
 import model_bls
 import model_bls_li
 
@@ -32,14 +32,18 @@ st.markdown(
 ##### --- SETTINGS & DATA LOADING -----
 
 DATA_DIR = "data"
-BLS_PATH = os.path.join(DATA_DIR, "bls_data.csv")  # Change as needed
-ILO_PATH = os.path.join(DATA_DIR, "ilo_data.csv")  # Change as needed
-LI_PATH = os.path.join(DATA_DIR, "linkedin_data.csv")  # For combo model if you have it
+BLS_PATH = os.path.join(DATA_DIR, "bls_data.csv")
+ILO_PATH = os.path.join(DATA_DIR, "ilo_data.csv")
+LI_PATH = os.path.join(DATA_DIR, "linkedin_data.csv")
 
 @st.cache_data(show_spinner=True)
 def load_all_data():
     bls_df, ilo_df = get_data(BLS_PATH, ILO_PATH)
-    li_df = pd.read_csv(LI_PATH) if os.path.exists(LI_PATH) else None
+    if os.path.exists(LI_PATH):
+        li_df = pd.read_csv(LI_PATH)
+    else:
+        # If LinkedIn data is missing, use some sample data with industry.
+        li_df = generate_sample_data()
     return bls_df, ilo_df, li_df
 
 bls_df, ilo_df, li_df = load_all_data()
@@ -153,3 +157,13 @@ elif page == "BLS+LinkedIn Salary Model":
         st.subheader("Industry-Wise Salary Distribution")
         fig = px.violin(li_df, x="Industry", y="Salary", color="Region")
         st.plotly_chart(fig, use_container_width=True)
+
+
+
+
+ 
+  
+   
+       
+
+   
