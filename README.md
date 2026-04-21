@@ -8,6 +8,7 @@
 [![Tableau](https://img.shields.io/badge/Tableau-Visualization-blueviolet?logo=tableau)](https://www.tableau.com/)
 
 ---
+## 🔴 Live Demo
 [![🚀 Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-Open_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app)
 ## Table of Contents
 
