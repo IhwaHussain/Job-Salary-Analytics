@@ -26,8 +26,11 @@ https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app/
 ---
 
 ## Overview
+---
 
-**Job Salary Analytics** is a comprehensive data analytics project that explores employment and recruitment trends using a blend of real-world job postings and governmental labor statistics. Leveraging over **124,000 job listings from 2023–2024** sourced from LinkedIn and cross-referenced with datasets from the Bureau of Labor Statistics (BLS) and the International Labour Organization (ILO), this project delivers actionable insights into the current employment landscape.
+**Job Salary Analytics** is a data analytics project exploring employment and salary trends using occupational wage data structures inspired by the Bureau of Labor Statistics (BLS) and LinkedIn job postings. The project features an interactive Streamlit web app with salary distribution charts, regional breakdowns, and an ML-powered salary prediction model.
+
+> ⚠️ **Note:** Currently running with sample data — real dataset integration in progress.
 
 The analysis covers:
 - Job status and classifications
