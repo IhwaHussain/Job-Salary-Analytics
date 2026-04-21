@@ -1,0 +1,51 @@
+name: Streamlit Deploy & Smoke Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          xargs -a packages.txt sudo apt install -y
+
+      - name: Install Python dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Lint code
+        run: |
+          pip install flake8
+          flake8 --max-line-length=120 .
+
+      - name: Run Streamlit smoke test
+        run: |
+          # Launch app in background and test that it serves
+          nohup streamlit run app.py --server.headless true --server.port 8501 &
+          sleep 15
+          curl --fail http://localhost:8501/_stcore/health  # Streamlit health endpoint
+          pkill -f streamlit
+
+      # ---- Optional: push docs/badges or notify if needed ----
+
+      - name: Deploy to Streamlit (manual step)
+        run: |
+          echo "⚠️ Auto-deployment to Streamlit Community Cloud must be completed via https://share.streamlit.io/"
+        # Deployment is managed by Streamlit Cloud, not via GitHub Actions.
+
+      - name: Workflow complete
+        run: echo "CI smoke tested app and deployment is managed in Streamlit Cloud."
