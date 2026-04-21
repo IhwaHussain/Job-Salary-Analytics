@@ -7,7 +7,7 @@
 
 ---
 ## 🔴 Live Demo
- https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app/
+An interactive demo is available here: 👉 https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app/
 ## Table of Contents
 - [Overview](#overview)
 - [Key Findings](#key-findings)
