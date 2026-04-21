@@ -10,6 +10,7 @@
 ---
 ## 🔴 Live Demo
 [![🚀 Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-Open_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app)
+![App Screenshot](screenshot.png)
 ## Table of Contents
 
 - [Overview](#overview)
