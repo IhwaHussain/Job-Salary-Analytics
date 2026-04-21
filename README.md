@@ -3,7 +3,7 @@
 [![license MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io)
-[![🚀 Live Demo](https://img.shields.io/badge/🚀_LIVE_DEMO-Open_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app)
+
 
 ---
 ## 🔴 Live Demo
