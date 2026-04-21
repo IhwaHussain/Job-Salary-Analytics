@@ -1,8 +1,4 @@
-
-
-
-
-   import os
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -116,3 +112,7 @@ elif page == "BLS Salary Model":
     st.subheader("Salary by Region")
     fig = px.box(bls_df, x='Region', y='Salary', color='Region', points='all')
     st.plotly_chart(fig, use_container_width=True)
+
+
+
+  
