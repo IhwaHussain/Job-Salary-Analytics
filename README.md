@@ -8,7 +8,7 @@
 [![Tableau](https://img.shields.io/badge/Tableau-Visualization-blueviolet?logo=tableau)](https://www.tableau.com/)
 
 ---
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app)  https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app/
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://job-salary-analytics-lvlkp6ty5chlcqkqcy9kcr.streamlit.app)  
 ## Table of Contents
 
 - [Overview](#overview)
