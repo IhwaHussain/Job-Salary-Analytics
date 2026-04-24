@@ -1,5 +1,5 @@
 # Job Salary Analytics
-
+![Job Salary Analytics Screenshot](screenshot.png)
 [![license MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.10-blue)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io)
